@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="MY CALCULATOR"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:text="First Number" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num1"
+        android:text="Second Number" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="5dp"
+        android:text="+"
+        android:layout_below="@+id/num2"
+        android:layout_alignEnd="@+id/first" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/add"
+        android:layout_alignTop="@+id/add"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/sub"
+        android:layout_alignBottom="@+id/sub"
+        android:layout_toRightOf="@+id/sub"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/sub"
+        android:layout_alignBottom="@+id/sub"
+        android:layout_toRightOf="@+id/mul"
+        android:text="/" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+</RelativeLayout>
